@@ -1,0 +1,36 @@
+.card{
+    width: 300px;
+    height: 300px;
+    
+    border: 1px solid #000;
+    
+}
+.card-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    
+}
+.card:hover .card-container{
+    transform: rotateY(180deg);
+}
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    background-color: red;
+}
+.back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    
+}
