@@ -1,0 +1,10 @@
+
+.container{
+    width: 98%;
+    margin: auto;
+    
+}
+.card-handler{
+    display: flex;
+    font-family: 'Roboto';
+}
